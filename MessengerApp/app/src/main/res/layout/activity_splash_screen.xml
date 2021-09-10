@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/splashscreen"
+        app:tint="@color/teal_200" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_above="@id/tVFromUjjawal"
+        android:text="Messenger"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/tVFromUjjawal"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_alignParentBottom="true"
+        android:text="From  Ujjawal"/>
+
+</RelativeLayout>

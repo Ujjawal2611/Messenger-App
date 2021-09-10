@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "798536193601",
+    "firebase_url": "https://messenger-app-6bebe-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "messenger-app-6bebe",
+    "storage_bucket": "messenger-app-6bebe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798536193601:android:c6321ad34080de69d9d8c0",
+        "android_client_info": {
+          "package_name": "com.example.messengerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "798536193601-6568ddpbgem4gqn8ue4v25c0fv0374b5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.messengerapp",
+            "certificate_hash": "64310326510dcd84709ef048bbeaaf510ab981c3"
+          }
+        },
+        {
+          "client_id": "798536193601-90583ec7baahe3pral14udtf2bqlu1rv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoY1Pd187ipqiFF9MDN2OgkraFBOoWe3s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "798536193601-90583ec7baahe3pral14udtf2bqlu1rv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

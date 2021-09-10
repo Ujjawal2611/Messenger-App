@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="81dp"
+        android:id="@+id/imgSignInScreen"
+        android:adjustViewBounds="true"
+        android:src="@drawable/splashscreen"
+        app:tint="#0C30F8" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tilUserName"
+        android:layout_below="@+id/imgSignInScreen"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:paddingStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:paddingEnd="20dp"
+        app:boxBackgroundColor="@color/white"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:hint="Enter The Name"
+            android:id="@+id/tietName"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tilEmail"
+        android:layout_below="@+id/tilUserName"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:paddingStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:paddingEnd="20dp"
+        app:boxBackgroundColor="@color/white"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:hint="Enter The Email ID"
+            android:id="@+id/tietEmail"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tilPassword"
+        android:layout_below="@+id/tilEmail"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:paddingStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:paddingEnd="20dp"
+        app:boxBackgroundColor="@color/white"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:hint="Enter The Password"
+            android:id="@+id/tietPassword"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tilPassword"
+        android:layout_marginTop="20dp"
+        android:id="@+id/llButton"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSignUp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:text="Sign Up"/>
+        <com.google.android.gms.common.SignInButton
+            android:layout_width="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_below="@+id/llButton"
+            android:layout_height="wrap_content"
+            android:id="@+id/Google_SignIn"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/llButton"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:id="@+id/tvAlreadyHaveAnAccount"
+        android:textSize="17sp"
+        android:layout_height="wrap_content"
+        android:text="Already Have An Account"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
