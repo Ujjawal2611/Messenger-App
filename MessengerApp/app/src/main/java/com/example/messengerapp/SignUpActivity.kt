@@ -36,8 +36,7 @@ class SignUpActivity : AppCompatActivity(), View.OnClickListener {
         binding.tvAlreadyHaveAnAccount.setOnClickListener(this)
         val currentUser = auth.currentUser
        database= FirebaseDatabase.getInstance("https://messenger-app-6bebe-default-rtdb.asia-southeast1.firebasedatabase.app/")
-       // database= FirebaseDatabase.getInstance()
-        Log.e("datav","$database grtgrttrg")
+
 
 
 

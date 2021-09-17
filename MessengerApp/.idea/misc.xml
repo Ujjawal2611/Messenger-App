@@ -4,10 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/MessengerApp/app/src/main/res/drawable/button_color.xml" value="0.13177083333333334" />
+        <entry key="..\:/MessengerApp/app/src/main/res/layout/activity_chat_details.xml" value="0.1" />
         <entry key="..\:/MessengerApp/app/src/main/res/layout/activity_main.xml" value="0.14479166666666668" />
         <entry key="..\:/MessengerApp/app/src/main/res/layout/activity_sign_in.xml" value="0.264" />
         <entry key="..\:/MessengerApp/app/src/main/res/layout/activity_sign_up.xml" value="0.13020833333333334" />
         <entry key="..\:/MessengerApp/app/src/main/res/layout/activity_splash_screen.xml" value="0.25416666666666665" />
+        <entry key="..\:/MessengerApp/app/src/main/res/layout/chat_view.xml" value="0.4" />
+        <entry key="..\:/MessengerApp/app/src/main/res/layout/fragment_chat.xml" value="0.264" />
         <entry key="..\:/MessengerApp/app/src/main/res/menu/main_menu.xml" value="0.11927083333333334" />
       </map>
     </option>

@@ -9,7 +9,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
-import com.example.messengerapp.databinding.ActivitySignInBinding
+
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -21,6 +21,7 @@ import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import androidx.annotation.NonNull
+import com.example.messengerapp.databinding.ActivitySignInBinding
 
 import com.google.android.gms.tasks.OnCompleteListener
 
@@ -45,20 +46,11 @@ class SignInActivity : AppCompatActivity(), View.OnClickListener {
 
         val gso = GoogleSignInOptions
             .Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            // .requestIdToken(getString(R.string.default_web_client_id))
+
             .requestEmail()
             .build()
-//        sharedPreferences = getSharedPreferences("UID", MODE_PRIVATE)
-//        val editor=sharedPreferences.edit()
-//        editor.putString("user",auth.currentUser?.uid.toString())
-//        editor.apply()
-//        var sharedPreferences=getSharedPreferences("UID",MODE_PRIVATE)
-       // var value=getSharedPreferences()
-//        if(FirebaseAuth.getInstance().currentUser!=null){
-//            val intent=Intent(this,MainActivity::class.java)
-//            startActivity(intent)
-//            finish()
-//        }
+
+
         // Build a GoogleSignInClient with the options specified by gso.
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 
@@ -134,7 +126,7 @@ class SignInActivity : AppCompatActivity(), View.OnClickListener {
                 signIn()
             }
             R.id.btnSignIn->{
-//                auth.signOut()
+
                 signOut()
                 signEmail()
             }

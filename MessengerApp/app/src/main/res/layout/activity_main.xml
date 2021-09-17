@@ -8,11 +8,13 @@
     android:orientation="vertical">
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
+        android:background="@color/teal_200"
         android:layout_height="?attr/actionBarSize"
         android:id="@+id/toolbarMainMenu"/>
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/teal_200"
         android:id="@+id/tabLayoutMain"/>
    <androidx.viewpager2.widget.ViewPager2
        android:layout_width="match_parent"
