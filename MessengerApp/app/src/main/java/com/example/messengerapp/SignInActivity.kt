@@ -146,9 +146,11 @@ class SignInActivity : AppCompatActivity(), View.OnClickListener {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
-                    Log.e("tag", "signInWithEmail:success")
+
                     val user = auth.currentUser
                     val intent=Intent(this,MainActivity::class.java)
+                    Log.e("tag", "signInWithEmail:success,$user")
+                    intent.putExtra("userID",user)
                     startActivity(intent)
                     finish()
                     //updateUI(user)

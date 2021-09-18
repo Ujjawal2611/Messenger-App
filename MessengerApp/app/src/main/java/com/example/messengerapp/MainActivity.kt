@@ -36,6 +36,8 @@ class MainActivity : AppCompatActivity() {
         TabLayoutMediator(binding.tabLayoutMain, binding.ViewPagerMain) { tab, position ->
             tab.text = arr[position]
         }.attach()
+        var userId=intent.getStringExtra("userId")
+
 
     }
 

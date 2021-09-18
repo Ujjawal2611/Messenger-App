@@ -11,10 +11,11 @@ public class User{
     constructor(){
 
     }
-    public constructor(userName: String, email: String, password: String)  {
+    public constructor(userName: String, email: String, password: String ,id:String)  {
         this.userName=userName
         this.email=email
         this.password=password
+        this.userId=id
     }
     constructor(userName: String,email: String,password: String,userId:String,lastMessage:String,profilePic:String){
         this.userName=userName

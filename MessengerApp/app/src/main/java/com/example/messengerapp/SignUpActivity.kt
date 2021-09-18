@@ -76,24 +76,11 @@ override fun onClick(v: View?) {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     Toast.makeText(this,"Successful",Toast.LENGTH_LONG).show()
-                   val users= User(name,email,password)
+
                     val id: String = task.result.user!!.uid
+                    val users= User(name,email,password,id)
                     val myRef = database.getReference("Users").child(id)
-                    myRef.setValue(users)
-                    myRef.addValueEventListener(object: ValueEventListener {
-
-                        override fun onDataChange(snapshot: DataSnapshot) {
-                            // This method is called once with the initial value and again
-                            // whenever data at this location is updated.
-                          //  val value = snapshot.getValue<String>()
-                            //Log.e("gggfg", "Value is: $value")
-                        }
-
-                        override fun onCancelled(error: DatabaseError) {
-                            Log.e("ggg", "Failed to read value.", error.toException())
-                        }
-
-                    })
+                    myRef.setValue(users).addOnSuccessListener {  }
                     // Sign in success, update UI with the signed-in user's information
                     Log.d("tags", "createUserWithEmail:success")
                     val currentUser = auth.currentUser
